@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipas</title>
+    <style>
+      :root {
+        --primary: #121212;
+        --secondary: #ecf0f1;
+        --body-width: 300px;
+        --body-height: 150px;
+        --button-font-size: 20px;
+        --button-padding-x:20px;
+        --button-padding-y: 10px;
+        --button-border-radius: 10px;
+        --title-font-size:18px;
+      }
+      body {
+        background-color: var(--primary);
+        color: var(--secondary);
+        width: var(--body-width);
+        height: var(--body-height);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      .container h1 {
+        width:100%;
+        text-align: center;
+        font-size: var(--title-font-size);
+        margin-top: 0;
+      }
+      button {
+        background-color: var(--secondary);
+        outline: none;
+        border: none;
+        cursor:pointer;
+        font-size: var(--button-font-size);
+        font-weight: bold;
+        padding: var(--button-padding-y) var(--button-padding-x);
+        border-radius: var(--button-border-radius);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="toto-title">Mode ElgrandeToto Activated!!!</h1>
+      <h3>Let's ToTo Repos Together.</h3>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+
+</html>
