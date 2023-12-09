@@ -1,20 +1,18 @@
 {
-  
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "ToTo",
   "version": "1.0",
   "description": "Simple extention to switch to ElgrandeToto Mode.",
   "permissions": ["activeTab"],
   "author": "Pipas",
-  "browser_action": {
+  "action": {
     "default_popup": "index.html",
     "default_icon": {
       "16": "assets/pipas.png"
     }
   },
   "background": {
-    "scripts": ["scripts/index.js"],
-    "persistent": false
+    "service_worker": "scripts/index.js"
   },
   "content_scripts": [
     {
